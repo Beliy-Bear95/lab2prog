@@ -38,4 +38,5 @@ public class Main {
 		return (s == Status.SLEEP);
 		
 	}
+	
 }

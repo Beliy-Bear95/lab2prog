@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: proglab26.Main
+Class-Path: lib/Pokemon.jar
+javac -d build -cp "lib/Pokemon.jar; src/pokemons/*.java; src/moves/*.java; src/proglab26/Main.java" src/moves/*.java src/pokemons/*.java src/proglab26/Main.java

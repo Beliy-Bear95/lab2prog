@@ -1,7 +1,6 @@
 package moves;
 
 import java.util.Random;
-
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.SpecialMove;
 import ru.ifmo.se.pokemon.Type;
@@ -10,10 +9,8 @@ public final class Psywave extends SpecialMove{
 		super(Type.PSYCHIC, pow, acc);
 		
 	}
-
-	protected int getlevel(Pokemon p) {
-		return getlevel(p);
-	}
+    
+	
     protected int ranval(){
     Random random = new Random();
 
@@ -29,7 +26,7 @@ public final class Psywave extends SpecialMove{
     @Override
     protected double calcBaseDamage(Pokemon att, Pokemon def){
 		int x = ranval();
-		int level = getlevel(att);
+		int level = 1;
 		double damage = (int) (level * x)/50;
 		return damage;
 	}
